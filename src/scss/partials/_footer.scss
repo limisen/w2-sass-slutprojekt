@@ -1,0 +1,12 @@
+@use 'colors' as *;
+
+.footer{
+    background-color: $footclr;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    div {
+        justify-self: center;
+    }
+}

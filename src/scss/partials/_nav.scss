@@ -1,0 +1,14 @@
+@use 'colors'as *;
+
+.nav {
+    background-color: $nav-bg;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    min-height: 4vh;
+}
+
+.nav>*>* {
+    display: none;
+}
