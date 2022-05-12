@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="sv">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABC-Klubben</title>
+<link rel="icon" type="icon.svg" href="../src/images/macintosh-clipart.svg">
+<link rel="stylesheet" href="../dist/css/style.css">
+</head>
+
+<body>
+    <h1 class="center">ABC-klubben för användare av datorer</h1>
+
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#news">News</a></li>
+
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Medlem m.m</a>
+            <div class="dropdown-content">
+                <a href="member.html">Bli medlem!</a>
+                <a href="memberSites.html">Medlemssajter</a>
+                <a href="memberPerks.html">Medlemsförmåner</a>
+                <a href="member-infor.html">Info för medlemar</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Styrelse</a>
+            <div class="dropdown-content">
+                <a href="#">Extra 1</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Webservices</a>
+            <div class="dropdown-content">
+                <a href="#">Webmail</a>
+                <a href="#">Webforum</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Datorsystem</a>
+            <div class="dropdown-content">
+                <a href="#">Extra 2</a>
+            </div>
+        </li>
+    </ul>
+
+    <main>
+        <h1>Medlemsförmåner</h1>
+
+        <blockquote>
+            <p>
+                När man tänker på allt man får genom att vara medlem i ABC-klubben är det egentligen konstigt att det inte
+                kostar mer.
+            </p>
+        <h2>Rabatt på datortidskrifter</h2>
+        <p>
+            Medlemskapet ger 25% rabatt på tidskriften <a href="https://kampanj.idg.se/idg-samarbete-abcklubben/">PC för alla</a>. Beställ prenumeration enklast via <a href="https://kampanj.idg.se/idg-samarbete-abcklubben/">denna länk</a>.
+        </p>
+        <h2>Personlig e-postadress</h2>
+        <p>
+            Som standard får du två adresser. Dels medlemsnummer@abc.se och dels fornamn.efternamn@abc.se. Möjligheter
+            finns givetvis också att beställa egna alias till adressen.
+            <br> <br>
+            Din post hämtar du via POP- eller IMAP med vanliga e-postprogram, via vår webmail eller direkt på klubbens servrar med Pine eller något annat Unix-program.
+            <br> <br>
+            För att sända e-post använder du SMTP AUTH och sänder via vår server. Instruktioner för detta finns under
+            medlemsinfo.
+        </p>
+
+        <h2>Mailserver utan spionage</h2>
+        <p>
+            Vi läser eller analyserar aldrig våra medlemmas mejl. De flesta stora mejlservrar, t.ex. google gmail,
+            analyserar dina mejl för att kunna ge dig riktade annonser, och för att upptäcka spam. Det slipper du hos
+            oss. Vi har spamskydd enligt de principer som beskrivs <a href="">här</a>, dvs. grålistning och spamtrapping, och det
+            innebär att vi aldrig analyserar innehållet i mejlen.
+        </p>
+
+        <h2>Egen webbplats på våra servrar</h2>
+        <p>
+            Om du vill kan du lägga upp en egen webbplats på någon av våra servrar. Vi kör Apache (OpenBSD). För dig som
+            behöver finns stöd för bl.a. PHP och CGI.
+        </p>
+
+        <h2>Parkera egen domän hos klubben</h2>
+        <p>
+            För dig som har eller skaffar en egen domän finns möjligheten att parkera den hos oss. Det innebär att du
+            har din domän någonstans i vårt system och att den är registrerad i våra DNS-servrar.
+        </p>
+
+        <h2>Skalkonto i klubbens UNIX-system</h2>
+        <p>
+            Alla medlemmar får inloggnings­uppgifter till vårt UNIX-system och ett eget hembibliotek att lägga sin filer
+            Vi har inte lagt några begränsningar på hur mycket utrymme du får belägga (det finns så det räcker), men vi
+            vill att du säger till om du behöver mer än några GB.
+            <br> <br>
+            Unixkontot får du som standard.
+        </p>
+
+        <h2>Vårt Webforum</h2>
+        <p>
+            Diskussioner och informations­spridning om våra system
+        </p>
+
+        <h2>Tillgång till ABC-Webben</h2>
+        <p>
+            Vi skulle önska att vi kunde visa dig allt det fina som finns på vårt intranät ABC-Webben. Då skulle du
+            precis som vi andra snabbt konstatera att de tips, lektioner, instruktioner, guider och annat som finns där
+            mer än väl räcker för att motivera hela medlems­avgiften.
+        </p>
+
+        <h2>VPN-tjänst</h2>
+        <p>
+            Läs mer <a href="">här</a> och kontakta <a href="">sysop</a> för närmare info.
+            
+        </p>
+
+        <h2>Backup</h2>
+        <p>
+            Gårdagens backup tillgänglig (monterad som /yesterday på unix-servrarna)
+        </p>
+
+        <h2>Webbproxy</h2>
+        <p>
+            Vi har en webbproxy (squif) på orm som våra medlemmar kan använda. Den lyssnar på port 3128 på localhost på orm. För att använda den behöver du sätta upp en ssh-tunnel från din dator till orm.abc.se:
+            <br> <br>
+            <code>
+                $ ssh -L 3128:127.0.0.1:3128 orm.abc.se
+            </code>
+            <br> <br>
+
+            Alternativt stoppa in följande i din ~/.ssh/config på hemmadatorn:
+            <br> <br>
+            <code>
+                Host orm.abc.se <br>
+                LocalForward 3128 127.0.0.1:3128
+            </code>
+            <br> <br>
+            ... och sedan starta chrome såhär:
+            chrome --proxy-server=127.0.0.1:3128
+            alternativt: chrome --incognito --proxy-server=127.0.0.1:3128
+            <br> <br>
+            Verifiera att det fungerar genom att surfa till https://www.abc.se/~lln/ip/
+            Den IP-address som står där bör vara 158.174.61.226.
+            <br> <br>
+            Vi har ingen loggning alls vilka som använder den eller till vart någon surfar. Det är "access_log
+            none"-direktivet i /etc/squid/squid.conf på orm. Var vänlig och missbruka inte detta.
+            <br> <br>
+            Vi har planer på att implementera adblocker för din webbrowser via DNS.
+        </p>
+        </blockquote>
+
+        <div style="min-height: 100px;"></div>
+    </main>
+
+
+    <footer class="footer">
+        <div>Revised by: Liam Cosford</div>
+        <div>
+            - ABC-klubben, Box 1046, 114 79 STOCKHOLM -
+        </div>
+        <div>
+            <div id="current_date"></div>
+        </div>
+        <div>
+            Senast validation: 4 May 2022
+        </div>
+        <div>
+
+        </div>
+        <div>
+            <a href="info@abc.se">info@abc.se</a>
+        </div>
+    </footer>
+    <script src="js/todays-date.js"></script>
+    <script src="js/nav-slider.js"></script>
+    </div>
+</body>
+
+</html>

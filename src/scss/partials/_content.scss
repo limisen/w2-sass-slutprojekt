@@ -1,6 +1,18 @@
 @use 'colors' as *;
 @use 'sizes' as *;
 
+main {
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+}
+
 main > * {
+    display: grid;
+    place-content: center;
     padding: 0 2vw 0 2vw;
+    max-width: 1000px;
+}
+
+blockquote > p {
+    margin: 0 0 0 0;
 }

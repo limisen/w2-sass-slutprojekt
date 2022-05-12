@@ -1,68 +1,89 @@
 <!DOCTYPE html>
 <html lang="sv">
-
-<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABC-Klubben</title>
+    <link rel="icon" type="icon.svg" href="../src/images/macintosh-clipart.svg">
     <link rel="stylesheet" href="../dist/css/style.css">
 </head>
-
 <body>
     <h1 class="center">ABC-klubben för användare av datorer</h1>
 
-    <nav class="nav">
-        <div>medlem m.m
-            <div>Bli medlem!</div>
-            <div>Medlemssajter</div>
-            <div>Medlemsförmåner</div>
-            <div>Info för medlemar</div>
-        </div>
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#news">News</a></li>
+        
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Medlem m.m</a>
+            <div class="dropdown-content">
+                <a href="member.html">Bli medlem!</a>
+                <a href="memberSites.html">Medlemssajter</a>
+                <a href="memberPerks.html">Medlemsförmåner</a>
+                <a href="member-infor.html">Info för medlemar</a>
+            </div>
+        </li>
 
-        <div>
-            styrelse
-            <div></div>
-        </div>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Styrelse</a>
+            <div class="dropdown-content">
+                <a href="#">Extra 1</a>
+            </div>
+        </li>
 
-        <div>Webservices
-            <div>Webmail</div>
-            <div>Webforum</div>
-        </div>
-
-        <div>Datorsytem
-            <div></div>
-        </div>
-    </nav>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Webservices</a>
+            <div class="dropdown-content">
+                <a href="#">Webmail</a>
+                <a href="#">Webforum</a>
+            </div>
+        </li>
+        
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Datorsystem</a>
+            <div class="dropdown-content">
+                <a href="#">Extra 2</a>
+            </div>
+        </li>
+    </ul>
 
     <main>
         <h1>Välkommen till ABC-Klubben</h1>
 
         <p>
-            Vi har ett antal servrar som kör OpenBSD där medlemmarna kan logga in och köra egna program. Vi lägger upp
+            Vi har ett antal servrar som kör OpenBSD där medlemmarna kan logga in och köra egna program. Vi lägger
+            upp
             standardpaket om det finns speciella önskemål.
-            
+
             Som medlem får du en unik e-postadress. Vår e-postserver är inte övervakad och din e-post läses inte av
             någon. Vi har normalt spamskydd, men det bygger inte på att vi läser innehållet i din e-post.
 
-            Det finns även en del andra förmåner du kan få som medlem, t.ex. har vi en VPN-tjänst.
+            Det finns även en del andra <a href="#perks">förmåner</a> du kan få som medlem, t.ex. har vi en VPN-tjänst.
 
-            ABC-klubben bildades 1980 och var från början en klubb för användare av ABC80-datorer. ABC-klubbens första
+            ABC-klubben bildades 1980 och var från början en klubb för användare av ABC80-datorer. ABC-klubbens
+            första
             årsmöte finns skildrat i boken "Svenska Hackare" av Daniel Goldberg och Linus Larsson.
-        </p> 
+        </p>
     </main>
 
 
     <footer class="footer">
-        <div>Created By: Liam Cosford</div>
+        <div>Revised by: Liam Cosford</div>
         <div>
-            <link rel="About me" href="">About me
+            - ABC-klubben, Box 1046, 114 79 STOCKHOLM -
         </div>
-
         <div>
             <div id="current_date"></div>
         </div>
-        <div>Senast validation: 4 May 2022 <div>
+        <div>
+            Senast validation: 4 May 2022
+        </div>
+        <div>
+
+        </div>
+        <div>
+            <a href="info@abc.se">info@abc.se</a>
+        </div>
     </footer>
     <script src="js/todays-date.js"></script>
     <script src="js/nav-slider.js"></script>
