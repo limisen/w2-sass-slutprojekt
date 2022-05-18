@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="sv">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABC-Klubben</title>
+<link rel="icon" type="icon.svg" href="../src/images/macintosh-clipart.svg">
+<link rel="stylesheet" href="../dist/css/style.css">
+</head>
+
+<body>
+    <h1 class="center">ABC-klubben för användare av datorer</h1>
+
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#news">News</a></li>
+
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Medlem m.m</a>
+            <div class="dropdown-content">
+                <a href="member.html">Bli medlem!</a>
+                <a href="memberSites.html">Medlemssajter</a>
+                <a href="memberPerks.html">Medlemsförmåner</a>
+                <a href="member-info.html">Info för medlemar</a>
+                <a href="password-info.html">Om lösenord</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="board.html">Styrelse</a>
+        </li>
+
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Webservices</a>
+            <div class="dropdown-content">
+                <a href="https://webmail.abc.se/">Webmail</a>
+                <a href="https://www.abc-klubben.se/phpbb/">Webforum</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="pcsystems.html">Datorsystem</a>
+            </div>
+        </li>
+    </ul>
+
+    <main>
+        <h1>Info för klubbens medlemmar</h1>
+
+        <ul class="info_choices">
+            <!-- om "Mer om ABC-klubben" väljs ska endast listan med info relaterat till den visas.
+            lika så gäller för varje val -->
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Mer om ABC-Klubben</a>
+                <div class="dropdown-content">
+                    <a href="#">Extra 1</a>
+                </div>
+            </li>
+
+            <!-- info endast relaterat till datorsystem -->
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Datorsystem</a>
+                <div class="dropdown-content">
+                    <a href="#">Extra 2</a>
+                </div>
+            </li>
+
+            <!-- info endast relaterat till  E-post-->
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">E-post</a>
+                <div class="dropdown-content">
+                    <a href="#">Extra 3</a>
+                </div>
+            </li>
+
+            <!-- info endast relaterat till  SFTP-->
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">SFTP - File Transfer Protocol</a>
+                <div class="dropdown-content">
+                    <a href="#">Extra 4</a>
+                </div>
+            </li>
+
+            <!-- info endast relaterat till  webbsidor som befinner sig på abc.se-->
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Webbsidor på www.abc.se</a>
+                <div class="dropdown-content">
+                    <a href="#">Extra 5</a>
+                </div>
+            </li>
+
+            <!-- info endast relaterat till medlemar och som inte passar till någon ovanstående rubrik -->
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Överig info för medlemmar</a>
+                <div class="dropdown-content">
+                    <a href="#">Extra 6</a>
+                </div>
+            </li>
+        </ul>
+
+        <div class="info_content">
+            <!-- Det är tänkt att visa info beroende på valet ovan och låta endast en ul och dess li:s visas på sidan åt taget -->
+            <ul class="mer_om_abc">
+                <li><a href="kontaktuppgifter.html">Kontaktuppgifter</a> Uppgifter för att kontakta abc.se</li>
+                <li><a href="abcfaq.html">ABC-faq:</a> Ofta ställda frågor</li>
+                <li><a href="support.html">Hur får jag support?</a> Guide till hur du kan få support</li>
+                <li><a href="arsmoten/">Årsmöteshandlingar</a> Årsmöten från 1980 och framåt</li>
+                <li><a href="styrelser.html">Styrelseledamöter</a> tabell över de möten från 1980 och framåt</li>
+                <li><a href="nyhetsbrev/">Nyhetsbrevet ABC</a> från september 2011 och framåt</li>
+                <li><a href="bladet/">ABC-bladet</a> från 1997 till 2010</li>
+                <li><a href="abc-bullen/">ABC-bullen</a> från 2001 till 2010</li>
+                <li><a href="network/">Nätverksinställningar</a> inställningar för ett lokalt hemmanätverk</li>
+                <li><a href="meetings/">Möten för medlemmar</a> De möten som är för medlemar</li>
+            </ul>
+
+            <!-- Sätt klassen till vad vad rubrikvalet ovan är och sedan populera med information. 1 li per data/info -->
+            <ul class="next_headline">
+                <li></li>
+            </ul>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div>Revised by: Liam Cosford</div>
+        <div>
+            - ABC-klubben, Box 1046, 114 79 STOCKHOLM -
+        </div>
+        <div>
+            <div id="current_date"></div>
+        </div>
+        <div>
+            Senast validation: 4 May 2022
+        </div>
+        <div>
+
+        </div>
+        <div>
+            <a href="info@abc.se">info@abc.se</a>
+        </div>
+    </footer>
+    <script src="js/todays-date.js"></script>
+    <script src="js/nav-slider.js"></script>
+    </div>
+</body>
+
+</html>

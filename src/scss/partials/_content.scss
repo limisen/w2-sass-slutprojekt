@@ -6,13 +6,35 @@ main {
     justify-self: center;
 }
 
-main > * {
+main>* {
     display: grid;
     place-content: center;
     padding: 0 2vw 0 2vw;
     max-width: 1000px;
 }
 
-blockquote > p {
+.mer_om_abc {
+    background-color: transparent;
+    justify-items: center;
+    display: contents;
+    color: black;
+}
+
+.mer_om_abc>li a {
+    background: grey;
+    color: black;
+}
+
+blockquote>p {
     margin: 0 0 0 0;
+}
+
+.info_choices {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    place-self: center;
+
+    li {
+        background: none;
+    }
 }
